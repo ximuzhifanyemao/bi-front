@@ -9,8 +9,17 @@ export default [
     ],
   },
   { path: '/', redirect: '/add_chart' },
-  { path: '/add_chart', name: '智能分析', icon: 'barChart', component: './AddChart' },
+  { path: '/intro', name: '项目简介', icon: 'table', component: './intro' },
+  { path: '/add_chart', name: '智能分析(同步)', icon: 'barChart', component: './AddChart' },
+  {
+    path: '/add_chart_async',
+    name: '智能分析(异步)',
+    icon: 'barChart',
+    component: './AddChartAsync',
+  },
   { path: '/my_chart', name: '我的图表', icon: 'table', component: './MyChart' },
+  { path: '/image_analysis', name: '图片分析', icon: 'table', component: './image_analysis' },
+
   {
     path: '/admin',
     icon: 'crown',
